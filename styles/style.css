@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 7px solid #E8C30A;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+
+}
+nav .stitre{
+    font-size: 40px;
+    margin: 15px;
+}
+nav .logo{
+    float: left;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 500px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-right: 20px;
+    border-bottom: solid #000;
+}
+
+.search{
+    margin-left: 200px;
+}
+.search .searchbare{
+    padding: 20 20;
+    font-size: 20px;
+    width: 200px;
+}
+.search .searchbtn{
+    padding : 20 20;
+    font-size: 20px;
+    width : 120px;
+    background-color: #DDA100;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background : url('/images/Friends.jpg');
+    background-size: cover;
+    padding: 40px;
+}
+
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+
+}
+
+header h3{
+    border-bottom: 3px solid ;
+    font-size: 20px;
+}
+
+header button{
+    padding: 10px 15px;
+    margin : 20 20;
+    font-size: 30px;
+    background-color: #DDA100;
+    cursor: pointer;
+}
+
+body .main{
+    padding: 20px;
+    margin : 40px;
+}
+
+.main .introd-left{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.introd-left h1{
+    font-size: 45px;
+border-bottom: solid 3px ;
+
+}
+
+.introd-left h3{
+    font-size: 30px;
+}
+
+.introd-left button{
+    padding: 20px 20px;
+    font-size: 30px;
+    border-radius: 25%;
+    outline: none;
+}
+
+body .main .firstPart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+
+body .main .firstPart .imgGrid{
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.contents{
+    font-size: 25px;
+    color: #DDA100;
+    text-decoration: none;
+}
+
+body .secondPart{
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+body .secondPart .slider{
+    overflow: hidden;
+}
+.secondPart .slider .slides{
+    position: relative;
+    margin: 0px;
+    left: 0;
+    animation: 10s slider infinite;
+    display: flex;
+
+}
+.secondPart .slider .slides.img{
+      float: left;
+      height: 200px;
+}
+
+body .thirdPart{
+    margin: 50px 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #FACF59;
+}
+
+.thirdPart .wrapper h1{
+    font-family: 'Allura', serif;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.wrapper .team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team .teamMember{
+    background-color: #fff;
+    margin: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: grey;
+    position: relative;
+
+}
+
+.teamMember h3{
+    color: #FFD64D;
+    font-size: 28px;
+    margin-top: 45px;
+}
+
+.teamMember p.role{
+    color: #ccc;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.teamMember .teamImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;  
+      top: -50px;
+      transform: translate(100%);
+      background: #fff;
+      border-radius: ;
+
+
+}
+
+.teamMember .teamImg img{
+    width: 100px;
+    height: 100px;
+  
+}
+
+body nav{
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logoContact{
+    position: relative;
+}
+body nav .logotitrobtn{
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.titroContact p{
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    font-size: solid 40px;
+}
+
+.logotitrobtn .logoContact img{
+
+width: 180px;
+height: 180px;
+}
+
+.logotitrobtn .btn{
+text-align: right;
+align-items: center;
+justify-content: center;
+width: 100px;
+}
+
+
+.logotitrobtn .btn button{
+    font-size: 40px;
+    background-color: #DDA100;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+body section{
+    margin: 20px;
+}
+
+
+@keyframes slider{
+
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100;
+    }
+    45%{
+        left: -100;
+    }
+    50%{
+        left: -200;
+    }
+    70%{
+        left: -200;
+    }
+    75%{
+        left: -300;
+    }
+    95%{
+        left: -300;
+    }
+}
+
+
+footer {
+    margin-top: 40px;
+    border-top: solid 7px #DDA100;
+    background-color: #FACF59;
+    padding: 30px 100px;
+}
+footer h1{
+    border-bottom: solid 3px;
+    width: 8%;
+}
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .services .service{
+    margin-right: 100px;
+    max-width: 600px;
+}
+
+
+
+
+@media screen and (max-width:650px){
+nav .onglets{
+ margin-left: 0px;
+}
+}
+
